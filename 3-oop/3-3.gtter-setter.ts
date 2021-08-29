@@ -1,7 +1,7 @@
 {
   class User {
     private internalAge = 4;
-    constructor(private firstName: string, public lastName: string) {}
+
     get age(): number {
       return this.internalAge;
     }
@@ -10,6 +10,16 @@
         this.internalAge = num;
       }
     }
+
+    /** 이 코드를 아래의 한줄로 요약하여 사용 가능
+     * private firstName:string
+     * public lastName:string
+     * constructor(firstName:string, lastName:string){
+     *  this.firstName = firstName;
+     *  this.lastName = lastName;
+     * }
+     */
+    constructor(private firstName: string, public lastName: string) {}
 
     get fullName(): string {
       return `${this.firstName} ${this.lastName}`;

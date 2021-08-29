@@ -6,7 +6,7 @@
 
   class CoffeeMaker {
     /**
-     * class level "static" 키워드는 멤버변수를 클래스레벨로 만들어줌 (함수도 앞에 static을 붙여서 사용가능 line 22와 line 42참고)
+     * class level "static" 키워드는 멤버변수를 클래스레벨로 만들어줌 (함수도 앞에 static을 붙여서 사용가능 line 21와 line 41참고)
      * 즉 클래스가 생성될때 한번 만들어져서 coffeeBeans처럼 매번 생성되지 않음 이는 곧 메모리의 절약을 의미
      * 또한 클래스의 밖에서 CoffeeMaker.BEANS_GRAM_PER_SHOT 처럼 사용할 수 있음
      * */
@@ -38,5 +38,5 @@
   const maker2 = new CoffeeMaker(12);
   console.log(maker2);
   console.log(CoffeeMaker.BEANS_GRAM_PER_SHOT);
-  CoffeeMaker.makeMachine(3);
+  const maker3 = CoffeeMaker.makeMachine(3);
 }

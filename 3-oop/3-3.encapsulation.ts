@@ -14,7 +14,7 @@
     private coffeeBeans: number = 0;
 
     private constructor(beans: number) {
-      this.fillCoffeeBeans(beans);
+      this.coffeeBeans = beans;
     }
 
     static makeMachine(coffeeBeans: number): CoffeeMaker {
